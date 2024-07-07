@@ -1,0 +1,196 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ======== stream css overrides ======== */
+.str-video__call-stats {
+  max-width: 500px;
+  position: relative;
+}
+
+.str-video__speaker-layout__wrapper {
+  max-height: 700px;
+}
+
+.str-video__participant-details {
+  color: white;
+}
+
+.str-video__menu-container {
+  color: white;
+}
+
+.str-video__notification {
+  color: white;
+}
+
+.str-video__participant-list {
+  background-color: #1c1f2e;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+  height: 100%;
+}
+
+.str-video__call-controls__button {
+  height: 40px;
+}
+
+.glassmorphism {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+.glassmorphism2 {
+  background: rgba(0, 224, 154, 0.12);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+/* ==== clerk class override ===== */
+
+.main {
+  height: 100%;
+}
+
+.cl-formButtonPrimary {
+  color: #080808;
+  border-radius: 0%;
+  background-color: #00e09a;
+  border: 1px solid #00e09a;
+}
+.cl-formButtonPrimary:hover {
+  color: #fff;
+  background-color: rgba(0, 224, 154, 0.25);
+}
+.cl-internal-ttumny[data-variant='solid'] {
+  border-width: 1px;
+}
+
+.cl-formFieldInput {
+  border-radius: 0%;
+}
+
+.cl-selectButton {
+  color: #fff;
+  border: 1px solid #00e09a;
+  border-radius: 0%;
+}
+.cl-selectButtonIcon {
+  color: white;
+}
+.cl-internal-167tq3k {
+  border: 1px solid #00e09a;
+}
+.cl-userButtonPopoverActionButtonIcon {
+  color: white;
+}
+
+.cl-userButtonPopoverActionButtonIcon:hover {
+  color: #00e09a;
+}
+
+.cl-logoBox {
+  height: 40px;
+}
+.cl-dividerLine {
+  background: #fff;
+  height: 1px;
+}
+
+.cl-socialButtonsBlockButton {
+  border: 1px solid #ffffff;
+  color: #fff;
+  border-radius: 0%;
+}
+.cl-socialButtonsBlockButton:hover {
+  border: 1px solid #00e09a;
+}
+.cl-internal-5d1u8u {
+  color: #ffffff;
+  border: 1px solid #fff;
+}
+.cl-internal-5d1u8u[data-variant='outline'] {
+  border-width: 1px;
+}
+.cl-internal-109vell[data-variant="outline"] {
+  border-width: 1px;
+}
+.cl-internal-5d1u8u:hover {
+  color: #00e09a;
+}
+
+.cl-cardBox {
+  border-radius: 0%;
+}
+
+.cl-footerActionLink {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.cl-card {
+  background: rgba(0, 224, 154, 0.12);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-top: 1px solid #00e09a;
+  border-left: 1px solid #00e09a;
+  border-right: 1px solid #00e09a;
+  border-radius: 0%;
+}
+
+.cl-footer {
+  margin-top: 0;
+  background: rgba(0, 224, 154, 0.12);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-left: 1px solid #00e09a;
+  border-right: 1px solid #00e09a;
+  border-bottom: 1px solid #00e09a;
+}
+
+.cl-internal-wkkub3 {
+  color: white;
+}
+.cl-userButtonPopoverActionButton {
+  color: white;
+}
+
+/* =============================== */
+
+@layer utilities {
+  .flex-center {
+    @apply flex justify-center items-center;
+  }
+
+  .flex-between {
+    @apply flex justify-between items-center;
+  }
+}
+
+/* animation */
+
+.show-block {
+  width: 100%;
+  max-width: 350px;
+  display: block;
+  animation: show 0.7s forwards linear;
+}
+
+@keyframes show {
+  0% {
+    animation-timing-function: ease-in;
+    width: 0%;
+  }
+
+  100% {
+    animation-timing-function: ease-in;
+    width: 100%;
+  }
+}
