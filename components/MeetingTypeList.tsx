@@ -113,7 +113,7 @@ const MeetingTypeList = () => {
         title="Create Meeting"
         className="text-center rounded-none"
         buttonText="Start an Instant Meet"
-        handleClick={createMeeting}
+        handleClick={() => setMeetingState('isInstantMeeting')}
         buttonText2="Schedule a Meet for later"
         handleClick2={() => setMeetingState('isScheduleMeeting')}
       />
@@ -197,7 +197,7 @@ const MeetingTypeList = () => {
         title="Start an Instant Meeting"
         className="text-center rounded-none"
         buttonText="Start Meeting"
-        handleClick={createMeeting}
+        handleClick={startInstantMeeting}
       />
     </section>
   );
