@@ -88,12 +88,26 @@
 .cl-internal-167tq3k {
   border: 1px solid #00e09a;
 }
-.cl-userButtonPopoverActionButtonIcon {
-  color: white;
-}
 
+.cl-userButtonPopoverCard {
+  background: #080808;
+}
+.cl-userButtonPopoverActionButton {
+  color: #fff;
+}
+.cl-userButtonPopoverActionButton:hover {
+  color: #00e09a;
+}
+.cl-userButtonPopoverActionButtonIcon {
+  color: #fff;
+}
 .cl-userButtonPopoverActionButtonIcon:hover {
   color: #00e09a;
+}
+
+.cl-internal-11ttlho {
+  background: #080808;
+  color: #fff;
 }
 
 .cl-logoBox {
@@ -119,7 +133,7 @@
 .cl-internal-5d1u8u[data-variant='outline'] {
   border-width: 1px;
 }
-.cl-internal-109vell[data-variant="outline"] {
+.cl-internal-109vell[data-variant='outline'] {
   border-width: 1px;
 }
 .cl-internal-5d1u8u:hover {
@@ -158,8 +172,11 @@
 .cl-internal-wkkub3 {
   color: white;
 }
-.cl-userButtonPopoverActionButton {
-  color: white;
+
+.cl-userButtonPopoverMain {
+  background: #080808;
+  color: #fff;
+  border-radius: 0px;
 }
 
 /* =============================== */
